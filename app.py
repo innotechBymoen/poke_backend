@@ -31,7 +31,7 @@ def get_pokemon():
 if(dbcreds.production_mode == True):
     print("Running in Production Mode")
     import bjoern # type: ignore
-    bjoern.run(app, "0.0.0.0", 5134)
+    bjoern.run(app, "0.0.0.0", 5100)
 else:
     from flask_cors import CORS
     CORS(app)
